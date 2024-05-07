@@ -23,11 +23,17 @@
     transition: .2s linear;
 }
 
+/* html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+} */
 
-.container {
+/* .container {
     max-width: 1170px;
     margin: auto;
-}
+} */
 
 .row {
     display: flex;
@@ -64,11 +70,11 @@ ul {
   
 .footer-col span {
     color: var(--pink);
-    font-size: 2rem;
+    font-size: 1rem;
 }
   
 .footer-col h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: var(--black);
     margin-bottom: 3rem;
     position: relative;
@@ -90,7 +96,7 @@ ul {
 }
   
 .footer-col ul li a {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--medium-gray);
     text-decoration: none;
     font-weight: 400;
@@ -105,16 +111,16 @@ ul {
   
 .footer-col .social-links a {
     display: inline-block;
-    height: 4rem;
-    width: 4rem;
+    height: 2.2rem;
+    width: 2.2rem;
     background-color: rgba(255, 255, 255, 0.2);
     margin: 0 10px 10px 0;
     margin-left: 0.3rem;
     text-align: center;
-    line-height: 4rem;
+    line-height: 2.2rem;
     border-radius: 2rem;
     color: var(--medium-gray);
-    font-size: 2rem;
+    font-size: 1.2rem;
     transition: all 0.5s linear;
 }
   
@@ -160,10 +166,10 @@ ul {
     padding:1.5rem;
     margin-top: 1.5rem;
     padding-top: 2.5rem;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: var(--black);
     border-top: .1rem solid rgba(0,0,0,.1);
-    padding-bottom: 9rem;
+    padding-bottom: 6rem;
 }
 
 .footer .credit span{

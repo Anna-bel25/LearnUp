@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2? family=Montserrat:ital,wght@0,300;0,500;0,900;1,300;1,500;1,800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --pink:  #E684AE;
+    --blue: #77A1D3;
+    --green: #79CBCA;
+    --white:#fff;
+    --black: #282424;
+    --light-gray: #3c3a3a;
+    --medium-gray: #464242;
+    --dark-gray: #666;
+    --light-bg: #f3f3f3;
+    --border: 0.1rem solid rgba(0, 0, 0, .1);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+
+section {
+    padding: 0 3rem 9%;
+}
+
+
+.title {
+    background: url(/img/heading.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 12rem;
+    margin-bottom: 2rem;
+}
+
+.title h1 {
+    color: var(--black);
+    font-size: 2rem;
+}
+
+.title p {
+    padding-bottom: 2.5rem;
+    padding-top: .4rem;
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.title p a {
+    color: var(--black);
+    padding-right: .5rem;
+}
+
+.title p a:hover {
+    color: var(--pink);
+}
+
+.subtitle {
+    display: inline-flex; /**/
+    margin-left: 1rem;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    padding: 0;
+    color: var(--black);
+
+    display: flex; /**/
+    justify-content: center; /**/
+}
+
+.subtitle span {
+    color: var(--pink);
+    padding-left: .7rem;
+}
+
+.subtitle a {
+    /* margin-left: auto; */
+    padding-top: .5rem; /**/
+    color: var(--dark-gray);
+    font-size: 1rem;
+}
+
+.subtitle a:hover {
+    color: var(--pink);
+}
+
+
+.heading{
+    display: inline-block;/**/
+    text-align: center;
+    padding: .9rem 0 .6rem 0;
+    border-block: var(--border);
+    margin-bottom: 2rem;
+    /* margin-top: 2rem; */
+}
+
+.heading h1 {
+    color: var(--black);
+    font-size: 2rem;
+    display: inline; /* Para que los elementos en línea se comporten correctamente */
+}
+
+
+.heading span{
+    font-size: 2.5rem;
+    background: rgba(255, 0, 170, 0.153);
+    color: var(--pink);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+  
+.heading span.space{
+    background: none;
+}
+
+/* Estilos de los botones */
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.7rem 3.5rem;
+    background: var(--pink);
+    color: var(--white);
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5rem;
+}
+
+
+.btn:hover {
+    background: var(--black);
+}
+
+
+
+/* Review section */
+.review .review-slider{
+    padding-bottom: 2rem;
+  }
+  
+  .review .box{
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    margin: 1rem;
+  }
+  
+  .review .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .review .box h3{
+    color: var(--light-gray);
+    font-size: 1.2rem;
+  }
+  
+  .review .box p{
+    color: var(--dark-gray);
+    font-size: 0.8rem;
+    padding: .8rem 0;
+  }
+  
+  .review .box .stars i{
+    color: var(--pink);
+    font-size: 1.2rem;
+  }
+  
+

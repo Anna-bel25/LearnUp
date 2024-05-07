@@ -5,24 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="img/flowers.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-</head>
-<body>
-
-    <div id="header"></div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-    <div id="footer"></div>
-    
     <script src="./js/script.js"></script>
+</head>
 
+
+    <!-- <div id="header"></div> -->
+    <link rel="stylesheet" href="/css/header.css">
+    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <!-- START HEADER -->
+    <header class="header">
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars" title="Toggle Navigation"></label>
+
+        <a href="#" class="logo"><i class="fas fa-pencil-alt"></i> Learn<span>Up</span></a>
+
+        <nav class="navbar">
+            <a href="./index.html" target="navbar">home</a>
+            <a href="./module/educational_themed/themed.html" >about</a>
+            <a href="./module/educational_level/level.html" >resources</a>
+            <a href="" target="navbar">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-search" title="Search"></a>
+            <a href="#" class="fas fa-heart" title="Favorite"></a>
+            <a href="#" class="fas fa-user" title="User"></a>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+
+    <!-- start HOME -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Recuros educativos</h3>
+            <span>nivel y materia</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptate perferendis omnis! Id illum quam magni distinctio nostrum, assumenda tenetur?</p>
+            <a href="#" class="btn">Subir ahora</a>
+        </div>
+    </section>
+    <!-- end HOME -->
+
+
+    <!-- start ABOUT section -->
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span> acerca de</span> nosotras </h1>
+    
+        <div class="row">
+    
+            <div class="video-container">
+                <video src="/img/vid1.mp4" loop autoplay muted></video>
+                <h3>los mejores recursos educativos</h3>
+            </div>
+    
+            <div class="content">
+                <h3>¿por qué elegirnos?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat illum, unde optio temporibus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni quia molestias perspiciatis, unde repudiandae quidem.</p>
+                <a href="#" class="btn">leer más</a>
+            </div>
+    
+        </div>
+    
+    </section>
+    <!-- end ABOUT section -->
+     
+    
+    <!-- START FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h3>Learn<span>Up</span></h3>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><a href="#" class="links"><i class="fi fi-sr-phone-flip"></i> +123-456-7890</a></li>
+                        <li><a href="#" class="links"><i class="fi fi-sr-envelope"></i> learnup@gmail.com</a></li>
+                        <li><a href="#" class="links"><i class="fi fi-sr-marker"></i> guayaquil, Ecuador</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">my profile</a></li>
+                        <li><a href="#">collections</a></li>
+                        <li><a href="#">academic resources</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1 class="credit">Created by <span>&copy; Grupo9</span> | All rights reserved</h1>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    
+    <!-- <div id="footer"></div> -->
 
 </body>
 </html>
