@@ -140,5 +140,62 @@ export class ApiService {
 
 
   /*------------------End Maria-----------------------*/
+  
+   /*------------Ivette--------------*/
+   crearColeccion(nombre: string, esPrivado: boolean): Observable<any> {
+    const body = { nombre, es_privado: esPrivado };
+    const token = localStorage.getItem('token');
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    });
+    return this.http.post<any>(`${this.userUrl}/colecciones`, body, { headers });
+  }
 
+  obtenerColecciones(): Observable<{ nombre: string, selected: boolean, coleccion_id: number }[]> {
+    const token = localStorage.getItem('token');
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    });
+    return this.http.get<{ nombre: string, selected: boolean, coleccion_id: number }[]>(`${this.userUrl}/colecciones`, { headers });
+  }
+
+  guardarRecursoEnColeccion(resource: any, colecciones: number[]): Observable<any> {
+    const token = localStorage.getItem('token');
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    });
+    return this.http.post(`${this.userUrl}/colecciones/guardar-recurso`, { resource, colecciones }, { headers });
+  }
+
+  obtenerColeccionesPublicas(): Observable<any> {
+    return this.http.get(`${this.userUrl}/colecciones/publicas`);
+  }
+
+  obtenerRecursosDeColeccion(coleccionId: number): Observable<any> {
+    return this.http.get(`${this.userUrl}/colecciones/${coleccionId}/recursos`);
+  }
+
+  obtenerColeccionesPrivadas(): Observable<any[]> {
+    const token = localStorage.getItem('token');
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    });
+    return this.http.get<any[]>(`${this.userUrl}/colecciones/privadas`, { headers });
+  }
+
+  eliminarColeccion(coleccion_id: number): Observable<any> {
+    const token = localStorage.getItem('token');
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    });
+    return this.http.delete(`${this.userUrl}/colecciones/${coleccion_id}`, {headers});
+  }
+
+  eliminarRecursoDeColeccion(coleccion_id: number, recurso_id: number): Observable<any> {
+    const token = localStorage.getItem('token');
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    });
+    return this.http.delete(`${this.userUrl}/colecciones/${coleccion_id}/recurso/${recurso_id}`, {headers});
+  }
 }

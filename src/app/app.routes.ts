@@ -11,6 +11,9 @@ import { UploadVideoComponent } from './upload-video/upload-video.component';
 import { UploadLibroComponent } from './upload-libro/upload-libro.component';
 import { UploadActividadComponent } from './upload-actividad/upload-actividad.component';
 
+import { PublicasColeccionesComponent } from './publicas-colecciones/publicas-colecciones.component';
+import { PrivadasColeccionesComponent } from './privadas-colecciones/privadas-colecciones.component';
+
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CuentaUsuarioComponent } from './cuenta-Usuario-Scree/cuenta-usuario/cuenta-usuario.component';
@@ -33,8 +36,8 @@ export const routes: Routes =
   { path: 'subir-actiidad', component: UploadActividadComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  // { path: 'colecciones', component:PublicasColeccionesComponent},
-  // { path: 'privadasColecciones', component:PrivadasColeccionesComponent},
+  { path: 'colecciones', component:PublicasColeccionesComponent},
+  { path: 'privadasColecciones', component:PrivadasColeccionesComponent},
   { path: 'cuenta-usuario', component:CuentaUsuarioComponent},
   //{ path: 'protected', component: ProtectedComponent, canActivate: [AuthGuard] },
 
