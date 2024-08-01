@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatDialogModule } from '@angular/material/dialog';
+
 import { CategoryMateriaComponent } from './category-materia/category-materia.component';
 import { CategoryNivelComponent } from './category-nivel/category-nivel.component';
 import { ResourceActividadComponent } from './resource-actividad/resource-actividad.component';
@@ -20,6 +21,10 @@ import { UploadActividadComponent } from './upload-actividad/upload-actividad.co
 import { UploadLibroComponent } from './upload-libro/upload-libro.component';
 import { UploadVideoComponent } from './upload-video/upload-video.component';
 import { UploadMenuComponent } from './upload-menu/upload-menu.component';
+
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { CuentaUsuarioComponent } from './cuenta-Usuario-Scree/cuenta-usuario/cuenta-usuario.component';
 
 @Component({
   selector: 'app-root',
@@ -37,6 +42,10 @@ import { UploadMenuComponent } from './upload-menu/upload-menu.component';
     HeaderComponent,
     FooterComponent,
     HomePageComponent,
+
+    LoginComponent,
+    RegisterComponent,
+    CuentaUsuarioComponent,
 
     CategoryMateriaComponent,
     CategoryNivelComponent,

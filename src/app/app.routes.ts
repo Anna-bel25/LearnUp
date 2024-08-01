@@ -11,6 +11,10 @@ import { UploadVideoComponent } from './upload-video/upload-video.component';
 import { UploadLibroComponent } from './upload-libro/upload-libro.component';
 import { UploadActividadComponent } from './upload-actividad/upload-actividad.component';
 
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { CuentaUsuarioComponent } from './cuenta-Usuario-Scree/cuenta-usuario/cuenta-usuario.component';
+
 export const routes: Routes =
 [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -27,11 +31,11 @@ export const routes: Routes =
   { path: 'subir-video', component: UploadVideoComponent },
   { path: 'subir-libro', component: UploadLibroComponent },
   { path: 'subir-actiidad', component: UploadActividadComponent },
-  // { path: 'login', component: LoginComponent },
-  // { path: 'register', component: RegisterComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   // { path: 'colecciones', component:PublicasColeccionesComponent},
   // { path: 'privadasColecciones', component:PrivadasColeccionesComponent},
-  // { path: 'cuenta-usuario', component:CuentaUsuarioComponent},
+  { path: 'cuenta-usuario', component:CuentaUsuarioComponent},
   //{ path: 'protected', component: ProtectedComponent, canActivate: [AuthGuard] },
 
   { path: '**', redirectTo: '/home' }
