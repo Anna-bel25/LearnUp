@@ -1,5 +1,5 @@
-import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Observable, Subject, tap } from 'rxjs';
 
 @Injectable({
@@ -10,7 +10,7 @@ export class ApiService {
   private actividadesUrl = 'https://apiresources-production.up.railway.app/api/actividades';
   private videosUrl = 'https://apiresources-production.up.railway.app/api/videos';
   private librosUrl='https://apiresources-production.up.railway.app/api/libros';
-  private userUrl = 'https://apiresources-production.up.railway.app/api/';
+  private userUrl = 'https://apiresources-production.up.railway.app/api';
   private userInfoChanged$ = new Subject<any>();
 
   constructor(private http: HttpClient) {}

@@ -22,9 +22,9 @@ import { UploadLibroComponent } from './upload-libro/upload-libro.component';
 import { UploadVideoComponent } from './upload-video/upload-video.component';
 import { UploadMenuComponent } from './upload-menu/upload-menu.component';
 
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './login/login.component'; 
 import { RegisterComponent } from './register/register.component';
-import { CuentaUsuarioComponent } from './cuenta-Usuario-Scree/cuenta-usuario/cuenta-usuario.component';
+import { CuentaUsuarioComponent } from './cuenta-Usuario-Scree/cuenta-usuario/cuenta-usuario.component'; 
 
 @Component({
   selector: 'app-root',

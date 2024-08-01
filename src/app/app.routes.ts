@@ -11,7 +11,7 @@ import { UploadVideoComponent } from './upload-video/upload-video.component';
 import { UploadLibroComponent } from './upload-libro/upload-libro.component';
 import { UploadActividadComponent } from './upload-actividad/upload-actividad.component';
 
-import { LoginComponent } from './login/login.component';
+import { LoginComponent } from './login/login.component'; 
 import { RegisterComponent } from './register/register.component';
 import { CuentaUsuarioComponent } from './cuenta-Usuario-Scree/cuenta-usuario/cuenta-usuario.component';
 

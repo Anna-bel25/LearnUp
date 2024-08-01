@@ -14,7 +14,7 @@ import { ApiService } from '../../api.service';
 
 @Component({
   selector: 'app-dialog',
-  templateUrl: 'patalla-dialog.html',
+  templateUrl: 'pantalla-dialog.html',
   standalone: true,
   imports: [MatButtonModule, MatDialogActions, MatDialogClose, MatDialogTitle, MatDialogContent],
   changeDetection: ChangeDetectionStrategy.OnPush,
