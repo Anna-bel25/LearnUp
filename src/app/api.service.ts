@@ -10,7 +10,7 @@ export class ApiService {
   private actividadesUrl = 'https://apiresources-production.up.railway.app/api/actividades';
   private videosUrl = 'https://apiresources-production.up.railway.app/api/videos';
   private librosUrl='https://apiresources-production.up.railway.app/api/libros';
-  private userUrl = 'http://localhost:3000/api';
+  private userUrl = 'https://apiresources-production.up.railway.app/api/';
   private userInfoChanged$ = new Subject<any>();
 
   constructor(private http: HttpClient) {}
