@@ -12,16 +12,14 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent{
   FormularioLogin: FormGroup;
 
-  constructor(private router: Router, private fb: FormBuilder, private apiService: ApiService,private snackBar: MatSnackBar) {
+  constructor(private apiService: ApiService,private router: Router, private fb: FormBuilder,private snackBar: MatSnackBar) {
     this.FormularioLogin = this.fb.group({
       correo: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required]]
     });
-  }
-  ngOnInit(): void {
   }
 
   get f() { return this.FormularioLogin.controls; }
