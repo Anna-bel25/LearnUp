@@ -5,7 +5,6 @@ import { HttpClient } from '@angular/common/http';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { VideoModel } from '../models/video.model';
-import { Observable, Subject, map } from 'rxjs';
 import { ActividadModel } from '../models/actividad.model';
 import { FormsModule } from '@angular/forms';
 import { LibroModel } from '../models/lirbo.model';
@@ -15,6 +14,7 @@ import { ResourceLibroComponent } from '../resource-libro/resource-libro.compone
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ApiService } from '../api.service';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { ColeccionesComponent } from '../colecciones/colecciones.component';
 
 @Component({
   selector: 'app-resource-full',
@@ -132,9 +132,9 @@ export class ResourceFullComponent implements OnInit  {
 
   }
 
-  // isLoggedIn(): boolean {
-  //   return this.apiService.isLoggedIn();
-  // }
+  isLoggedIn(): boolean {
+    return this.apiService.isLoggedIn();
+  }
 
 
   determinarMostrarTodosLosRecursos(): void {
@@ -540,6 +540,17 @@ export class ResourceFullComponent implements OnInit  {
     const halfWindowHeight = window.innerHeight / 2;
     const scrollToPosition = halfWindowHeight + offset;
     window.scrollTo({ top: scrollToPosition, behavior: 'smooth' });
+  }
+
+  openDialog(event: Event, recurso: any) {
+    event.preventDefault();
+    const dialogRef = this.dialog.open(ColeccionesComponent, {
+      data: { recurso }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
 }

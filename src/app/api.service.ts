@@ -6,11 +6,11 @@ import { Observable, Subject, tap } from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  private materiasUrl = 'https://apiresources-production.up.railway.app/api/materias';
-  private actividadesUrl = 'https://apiresources-production.up.railway.app/api/actividades';
-  private videosUrl = 'https://apiresources-production.up.railway.app/api/videos';
-  private librosUrl='https://apiresources-production.up.railway.app/api/libros';
-  private userUrl = 'https://apiresources-production.up.railway.app/api';
+  private materiasUrl = 'http://localhost:3000/api/materias';
+  private actividadesUrl = 'http://localhost:3000/api/actividades';
+  private videosUrl = 'http://localhost:3000/api/videos';
+  private librosUrl='http://localhost:3000/api/libros';
+  private userUrl = 'http://localhost:3000/api';
   private userInfoChanged$ = new Subject<any>();
 
   constructor(private http: HttpClient) {}
@@ -60,7 +60,7 @@ export class ApiService {
       })
     );
   }
-  
+
 
   isLoggedIn(): boolean {
     return !!localStorage.getItem('token');
@@ -140,7 +140,7 @@ export class ApiService {
 
 
   /*------------------End Maria-----------------------*/
-  
+
    /*------------Ivette--------------*/
    crearColeccion(nombre: string, esPrivado: boolean): Observable<any> {
     const body = { nombre, es_privado: esPrivado };
